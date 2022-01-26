@@ -1,0 +1,7 @@
+.page-success {
+  min-height: 75vh;
+  .btn-signup {
+    @include button-variant(#f3f3f3, transparent);
+    color: #bbbbbb;
+  }
+}

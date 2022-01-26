@@ -1,0 +1,27 @@
+.store-cart {
+  margin-top: 20px;
+
+  .table-cart {
+    margin: 0 -15px;
+
+    thead td {
+      color: #0c0d36;
+      font-weight: 600;
+    }
+    .title {
+      font-size: 18px;
+      color: #0c0d36;
+    }
+    .subtitle {
+      color: #979797;
+      font-size: 14px;
+    }
+    .btn-cart {
+      @include button-variant(#fc5e84, transparent);
+    }
+    .cart-img {
+      border-radius: 8px;
+      max-height: 85px;
+    }
+  }
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" type="img/svg" href="images/logo-icon.svg" />
+
+    <title>Sneakersaja - Toko Sepatu No.1 di Indonesia</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light navbar-store fixed-top"
+      data-aos="fade-down"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.svg" class="logo" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active" href="index.html">Beranda</a>
+            <a class="nav-item nav-link" href="categories.html">Kategori</a>
+            <a class="nav-item nav-link" href="#">Rewards</a>
+          </div>
+          <ul class="navbar-nav d-none d-lg-flex">
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+              >
+                <img
+                  src="images/user.png"
+                  class="rounded-circle profile-picture mr-2"
+                  alt=""
+                />
+                Hi, Mardha
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a href="dashboard.html" class="dropdown-item">Dashboard</a>
+                <a href="dashboard-account.html" class="dropdown-item"
+                  >Setting Account</a
+                >
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link d-inline-block mt-2"
+                id="navbarDropdown"
+                role="button"
+                data-target="dropdown"
+              >
+                <img
+                  src="images/cart-empty.svg"
+                  class="rounded-circle profile-picture"
+                  alt=""
+                />
+              </a>
+            </li>
+          </ul>
+          <div class="navbar-nav d-block d-lg-none">
+            <a href="#" class="nav-item nav-link">Hi, Mardha</a>
+            <a href="#" class="nav-item nav-link">Cart</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page-Content -->
+    <div class="page-content page-detail">
+      <section class="store-breadcrumb" data-aos="fade-down">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item active">Product Detail</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="store-gallery" id="gallery">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8" data-aos="zoom-in">
+              <transition name="slide-fade" mode="out-in">
+                <img
+                  :src="photos[activePhoto].url"
+                  :key="photos[activePhoto].id"
+                  class="w-100 main-image"
+                  alt=""
+                />
+              </transition>
+            </div>
+            <div class="col-lg-2">
+              <div class="row">
+                <div
+                  class="col-3 col-lg-12 mt-3 mt-lg-0"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                  v-for="(photo, index) in photos"
+                  :key="photo.id"
+                >
+                  <a href="#" @click="changeActive(index)">
+                    <img
+                      :src="photo.url"
+                      class="w-100 thumbnail-image"
+                      :class="{active : index == activePhoto}"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="store-detail">
+        <div class="container">
+          <div class="row heading-detail">
+            <div class="col-lg-8">
+              <h2>Red and black Air Jordan</h2>
+              <p class="owner">by mrdhamstore</p>
+              <p class="price">$1,409</p>
+            </div>
+            <div class="col-lg-2">
+              <a href="cart.html" class="btn btn-danger btn-block"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <div class="row description-detail">
+            <div class="col-12 col-lg-8">
+              <p>
+                Walaupun sneakers ini sangat sering digunakan untuk bermain
+                basket, Nike Air Jordan bisa jadi pilihan utama untuk gaya
+                kebarat-baratan. Kamu bakal ngerasa pede jika menggunakan sepatu
+                ini dengan celana skinny jeans atau baggy biar keliatan catchy.
+              </p>
+              <p>
+                Apakah Nike Air Jordan? Air Jordan adalah seri sepatu dan
+                perlengkapan olahraga yang diproduksi oleh brand ternama, Nike.
+                Awalnya, Nike Jordan diproduksi sebagai sepatu basket untuk
+                Michael Jordan, salah satu pemain basket fenomenal di dunia pada
+                tahun 1984 dan diluncurkan ke pasaran setahun setelahnya.
+              </p>
+            </div>
+          </div>
+          <div class="row testimoni-heading mt-3">
+            <div class="col-12 col-lg-8">
+              <h5>Customer Review (3)</h5>
+            </div>
+          </div>
+          <div class="row testimoni-body mt-3">
+            <div class="col-12 col-lg-8">
+              <ul class="list-unstyled">
+                <li class="media">
+                  <img
+                    src="images/testi-1.png"
+                    width="90"
+                    class="rounded"
+                    alt=""
+                  />
+                  <div class="media-body ml-3">
+                    <h5 class="mt-2 mb-1">Hazza Risky</h5>
+                    I thought it was not good for living room. I really happy to
+                    decided buy this product last week now feels like homey.
+                  </div>
+                </li>
+                <li class="media mt-3 mt-lg-5">
+                  <img
+                    src="images/testi-2.png"
+                    width="90"
+                    class="rounded"
+                    alt=""
+                  />
+                  <div class="media-body ml-3">
+                    <h5 class="mt-2 mb-1">Farah Maulida</h5>
+                    Color is great with the minimalist concept. Even I thought
+                    it was made by Cactus industry.
+                  </div>
+                </li>
+                <li class="media mt-3 mt-lg-5">
+                  <img
+                    src="images/testi-3.png"
+                    width="90"
+                    class="rounded"
+                    alt=""
+                  />
+                  <div class="media-body ml-3">
+                    <h5 class="mt-2 mb-1">Fitri Susanti</h5>
+                    When I saw at first, it was really awesome to have with.
+                    Just let me know if there is another upcoming product like
+                    this.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="pt-4 text-center">
+              &copy; Copyright 2022 | All Right Reserved Built by Mardha mardiya
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.slim.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      $(".carousel").carousel({
+        interval: 3000,
+      });
+    </script>
+
+    <script src="/vendor/vue/vue.js"></script>
+    <script>
+      var app = new Vue({
+        el: "#gallery",
+        mounted() {
+          AOS.init();
+        },
+        data: {
+          activePhoto: 0,
+          photos: [
+            {
+              id: 1,
+              url: "/images/jordan-detail.jpg",
+            },
+            {
+              id: 2,
+              url: "/images/jordan-detail2.jpg",
+            },
+            {
+              id: 3,
+              url: "/images/jordan-detail3.jpg",
+            },
+            {
+              id: 4,
+              url: "/images/jordan-detail4.jpg",
+            },
+          ],
+        },
+        methods: {
+          changeActive(id) {
+            this.activePhoto = id;
+          },
+        },
+      });
+    </script>
+    <script src="script/navbar.js"></script>
+  </body>
+</html>

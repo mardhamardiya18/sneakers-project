@@ -1,0 +1,19 @@
+.page-auth {
+  .row-auth {
+    min-height: 70vh;
+
+    h2 {
+      font-size: 28px;
+    }
+
+    .form-control {
+      background: #f3f3f3;
+      border-radius: 8px;
+    }
+
+    .btn-signup {
+      @include button-variant(#f3f3f3, transparent);
+      color: #bbb;
+    }
+  }
+}
