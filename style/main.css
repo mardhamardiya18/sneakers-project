@@ -10982,6 +10982,31 @@ footer p {
   text-decoration: none;
 }
 
+.card {
+  background: #fefefe;
+  -webkit-box-shadow: 0px 4px 15px #f1f1f8;
+          box-shadow: 0px 4px 15px #f1f1f8;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+}
+
+.card:hover {
+  text-decoration: none;
+}
+
+.card .card-dashboard-title {
+  font-weight: normal;
+  font-size: 16px;
+  color: #c5c5c5;
+}
+
+.card .card-dashboard-subtitle {
+  font-weight: 600;
+  font-size: 32px;
+  color: #cb011b;
+}
+
 .page-detail .store-gallery {
   margin-top: 20px;
 }
@@ -11209,6 +11234,11 @@ footer p {
           box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
 }
 
+.page-dashboard #page-content-wrapper {
+  min-width: 100vw;
+  background-color: #ebebeb;
+}
+
 .page-dashboard #page-content-wrapper .navbar-store {
   background-color: #ee5f5f !important;
 }
@@ -11216,9 +11246,18 @@ footer p {
 .page-dashboard .sidebar-wrapper {
   min-height: 100vh;
   margin-top: 60px;
-  margin-left: -20rem;
+  margin-left: -15rem;
   -webkit-transition: margin 0.3s ease-in-out;
   transition: margin 0.3s ease-in-out;
+  z-index: 100;
+  background-color: #fff;
+}
+
+@media (max-width: 767.98px) {
+  .page-dashboard .sidebar-wrapper {
+    position: fixed;
+    left: 0;
+  }
 }
 
 .page-dashboard .sidebar-heading {
@@ -11246,10 +11285,52 @@ footer p {
   margin-left: 0;
 }
 
-@media (min-width: 768px) {
+.page-dashboard .section-content {
+  margin-top: 100px;
+}
+
+.page-dashboard .section-content .dashboard-title {
+  font-weight: normal;
+  font-size: 24px;
+  color: #0c0d36;
+}
+
+.page-dashboard .section-content .dashboard-subtitle {
+  font-weight: 300;
+  font-size: 16px;
+  color: #9191a9;
+}
+
+.page-dashboard .section-content .recent-transaction .title-recent {
+  font-weight: 500;
+  font-size: 18px;
+  color: #0c0d36;
+}
+
+.page-dashboard .section-content .recent-transaction .img-box {
+  max-width: 100px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.page-dashboard .section-content .recent-transaction .img-box img {
+  width: 100%;
+}
+
+.page-dashboard .section-content .recent-transaction .detail {
+  font-weight: normal;
+  font-size: 18px;
+  color: #0c0d36;
+}
+
+@media (min-width: 992px) {
   .page-dashboard .sidebar-wrapper {
     margin-left: 0;
     margin-top: 0px;
+  }
+  .page-dashboard #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
   }
   .page-dashboard #page-content-wrapper .navbar-store {
     background-color: transparent !important;
@@ -11259,6 +11340,10 @@ footer p {
   }
   .page-dashboard .sidebar-heading img {
     max-width: 250px;
+  }
+  .page-dashboard .section-content {
+    margin-top: 20px;
+    margin-left: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */

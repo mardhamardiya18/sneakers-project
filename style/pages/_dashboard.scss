@@ -1,5 +1,7 @@
 .page-dashboard {
   #page-content-wrapper {
+    min-width: 100vw;
+    background-color: rgb(235, 235, 235);
     .navbar-store {
       background-color: rgb(238, 95, 95) !important;
     }
@@ -7,8 +9,15 @@
   .sidebar-wrapper {
     min-height: 100vh;
     margin-top: 60px;
-    margin-left: -20rem;
+    margin-left: -15rem;
     transition: margin 0.3s ease-in-out;
+    z-index: 100;
+    background-color: #fff;
+
+    @include media-breakpoint-down(sm) {
+      position: fixed;
+      left: 0;
+    }
   }
   .sidebar-heading {
     padding: 30px 15px;
@@ -42,13 +51,51 @@
     }
   }
 
-  @include media-breakpoint-up(md) {
+  .section-content {
+    margin-top: 100px;
+
+    .dashboard-title {
+      font-weight: normal;
+      font-size: 24px;
+      color: #0c0d36;
+    }
+    .dashboard-subtitle {
+      font-weight: 300;
+      font-size: 16px;
+      color: #9191a9;
+    }
+
+    .recent-transaction {
+      .title-recent {
+        font-weight: 500;
+        font-size: 18px;
+        color: #0c0d36;
+      }
+      .img-box {
+        max-width: 100px;
+        border-radius: 6px;
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+      }
+      .detail {
+        font-weight: normal;
+        font-size: 18px;
+        color: #0c0d36;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
     .sidebar-wrapper {
       margin-left: 0;
       margin-top: 0px;
     }
 
     #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
       .navbar-store {
         background-color: transparent !important;
       }
@@ -58,6 +105,10 @@
       img {
         max-width: 250px;
       }
+    }
+    .section-content {
+      margin-top: 20px;
+      margin-left: 20px;
     }
   }
 }
