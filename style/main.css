@@ -11323,6 +11323,24 @@ footer p {
   color: #0c0d36;
 }
 
+.page-dashboard .section-content .nav-pills .nav-link {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #9191a9;
+  padding: 6px 0;
+}
+
+.page-dashboard .section-content .nav-pills .nav-link.active {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #0c0d36;
+  background: none;
+  border-bottom: 3px solid #850b15;
+  border-radius: 0;
+}
+
 @media (min-width: 992px) {
   .page-dashboard .sidebar-wrapper {
     margin-left: 0;

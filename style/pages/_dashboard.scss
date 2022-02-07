@@ -85,6 +85,26 @@
         color: #0c0d36;
       }
     }
+
+    .nav-pills {
+      .nav-link {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        color: #9191a9;
+        padding: 6px 0;
+
+        &.active {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 27px;
+          color: #0c0d36;
+          background: none;
+          border-bottom: 3px solid #850b15;
+          border-radius: 0;
+        }
+      }
+    }
   }
 
   @include media-breakpoint-up(lg) {
