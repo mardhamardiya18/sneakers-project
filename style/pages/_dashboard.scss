@@ -86,6 +86,34 @@
       }
     }
 
+    .btn-delete-detail {
+      right: -10px;
+      top: -10px;
+      background-color: yellow;
+    }
+
+    .nav-bread {
+      .breadcrumb-item {
+        a {
+          text-decoration: none;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .img-transaction-detail {
+      border-radius: 20px;
+    }
+
+    .label-detail {
+      font-size: 18px;
+      color: #c5c5c5;
+    }
+
+    .text-detail {
+      font-size: 20px;
+      color: #0c0d36;
+    }
     .nav-pills {
       .nav-link {
         font-weight: normal;

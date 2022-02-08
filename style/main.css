@@ -11323,6 +11323,31 @@ footer p {
   color: #0c0d36;
 }
 
+.page-dashboard .section-content .btn-delete-detail {
+  right: -10px;
+  top: -10px;
+  background-color: yellow;
+}
+
+.page-dashboard .section-content .nav-bread .breadcrumb-item a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.page-dashboard .section-content .img-transaction-detail {
+  border-radius: 20px;
+}
+
+.page-dashboard .section-content .label-detail {
+  font-size: 18px;
+  color: #c5c5c5;
+}
+
+.page-dashboard .section-content .text-detail {
+  font-size: 20px;
+  color: #0c0d36;
+}
+
 .page-dashboard .section-content .nav-pills .nav-link {
   font-weight: normal;
   font-size: 18px;

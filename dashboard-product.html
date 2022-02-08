@@ -31,7 +31,7 @@
 
           <div class="list-group list-group-flush mt-3">
             <a href="dashboard.html" class="list-group-item">Dashboard</a>
-            <a href="dashboard-product.html" class="list-group-item"
+            <a href="dashboard-product.html" class="list-group-item active"
               >My Products</a
             >
             <a href="dashboard-transactions.html" class="list-group-item"
@@ -40,7 +40,7 @@
             <a href="dashboard-store-setting.html" class="list-group-item"
               >Store Setting</a
             >
-            <a href="dashboard-account.html" class="list-group-item active"
+            <a href="dashboard-account.html" class="list-group-item"
               >My Account</a
             >
           </div>
@@ -125,105 +125,87 @@
           >
             <div class="container-fluid">
               <div class="dashboard-heading">
-                <h2 class="dashboard-title">My Account</h2>
-                <p class="dashboard-subtitle">Update your current profile</p>
+                <h2 class="dashboard-title">My Products</h2>
+                <p class="dashboard-subtitle">Manage it well and get money</p>
               </div>
 
               <div class="dashboard-content mt-4 mt-ld-5">
-                <div class="card">
-                  <div class="card-body">
-                    <form action="dashboard-account.html">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input
-                              type="text"
-                              name="name"
-                              id="name"
-                              class="form-control"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input
-                              type="email"
-                              name="email"
-                              id="name"
-                              class="form-control"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="address1">Address 1</label>
-                            <input
-                              type="text"
-                              name="address1"
-                              id="address1"
-                              class="form-control"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="address2">Address 2</label>
-                            <input
-                              type="text"
-                              name="address2"
-                              id="address2"
-                              class="form-control"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label for="province">Province</label>
-                            <input type="text" class="form-control" />
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label for="city">City</label>
-                            <input type="text" class="form-control" />
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label for="postal">Postal Code</label>
-                            <input type="number" class="form-control" />
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="country">Country</label>
-                            <input
-                              type="text"
-                              name="country"
-                              id="country"
-                              class="form-control"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input
-                              type="text"
-                              name="phone"
-                              id="phone"
-                              class="form-control"
-                            />
-                          </div>
-                        </div>
+                <div class="row">
+                  <div class="col">
+                    <a href="#" class="btn btn-success">Add New Product</a>
+                  </div>
+                </div>
+                <div class="row mt-3 mt-sm-5">
+                  <div class="col-md-3">
+                    <a href="dashboard-product-detail.html" class="card p-3">
+                      <img
+                        src="images/Adidas.jpg"
+                        class="rounded-lg img-fluid"
+                        alt=""
+                      />
+                      <div class="card-body p-0 mt-4">
+                        <h5 class="card-text text-dark">
+                          Adidas Shoe Sneakers
+                        </h5>
+                        <p class="card-text text-muted">by Adidas</p>
                       </div>
-
-                      <button type="submit" class="btn btn-success px-5 mt-3">
-                        Save
-                      </button>
-                    </form>
+                    </a>
+                  </div>
+                  <div class="col-md-3 mt-3 mt-sm-0">
+                    <a href="dashboard-product-detail.html" class="card p-3">
+                      <img
+                        src="images/Skate.jpg"
+                        class="rounded-lg img-fluid"
+                        alt=""
+                      />
+                      <div class="card-body p-0 mt-4">
+                        <h5 class="card-text text-dark">
+                          Skate shoe Sneakers Vans
+                        </h5>
+                        <p class="card-text text-muted">by Vans</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-3 mt-3 mt-sm-0">
+                    <a href="dashboard-product-detail.html" class="card p-3">
+                      <img
+                        src="images/Mercurial.jpg"
+                        class="rounded-lg img-fluid"
+                        alt=""
+                      />
+                      <div class="card-body p-0 mt-4">
+                        <h5 class="card-text text-dark">
+                          Mercurial Vapor Tennis
+                        </h5>
+                        <p class="card-text text-muted">by Nike</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-3 mt-3 mt-sm-0">
+                    <a href="dashboard-product-detail.html" class="card p-3">
+                      <img
+                        src="images/Air Jordan.jpg"
+                        class="rounded-lg img-fluid"
+                        alt=""
+                      />
+                      <div class="card-body p-0 mt-4">
+                        <h5 class="card-text text-dark">Air Jordan Shoe</h5>
+                        <p class="card-text text-muted">by Nike</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-3 mt-3">
+                    <a href="dashboard-product-detail.html" class="card p-3">
+                      <img
+                        src="images/Skate.jpg"
+                        class="rounded-lg img-fluid"
+                        alt=""
+                      />
+                      <div class="card-body p-0 mt-4">
+                        <h5 class="card-text text-dark">Skate shoe</h5>
+                        <p class="card-text text-muted">by Vans</p>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>

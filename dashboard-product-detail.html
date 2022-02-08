@@ -31,15 +31,13 @@
 
           <div class="list-group list-group-flush mt-3">
             <a href="dashboard.html" class="list-group-item">Dashboard</a>
-            <a href="dashboard-product.html" class="list-group-item"
+            <a href="dashboard-product.html" class="list-group-item active"
               >My Products</a
             >
             <a href="dashboard-transactions.html" class="list-group-item"
               >Transactions</a
             >
-            <a
-              href="dashboard-store-setting.html"
-              class="list-group-item active"
+            <a href="dashboard-store-setting.html" class="list-group-item"
               >Store Setting</a
             >
             <a href="dashboard-account.html" class="list-group-item"
@@ -127,87 +125,149 @@
           >
             <div class="container-fluid">
               <div class="dashboard-heading">
-                <h2 class="dashboard-title">Store Settings</h2>
-                <p class="dashboard-subtitle">Make store that profitable</p>
+                <h2 class="dashboard-title">Adidas Shoe Sneakers</h2>
+                <nav class="nav-bread mt-4 mb-3">
+                  <ol class="breadcrumb p-0">
+                    <li class="breadcrumb-item">
+                      <a href="dashboard-product.html" class="text-dark"
+                        >Products</a
+                      >
+                    </li>
+                    <li class="breadcrumb-item active">Product Detail</li>
+                  </ol>
+                </nav>
               </div>
 
               <div class="dashboard-content mt-4 mt-ld-5">
                 <div class="row">
                   <div class="col">
                     <div class="card">
-                      <div class="card-body">
-                        <form>
+                      <div class="card-body p-5">
+                        <form action="">
                           <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-md-6">
                               <div class="form-group">
-                                <label>Store Name</label>
+                                <label for="name">Product Name</label>
                                 <input
                                   type="text"
                                   class="form-control"
-                                  v-model="name"
-                                  autofocus
+                                  name=""
+                                  id="name"
+                                  value="Adidas Shoe Sneakers"
                                 />
                               </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-md-6">
                               <div class="form-group">
-                                <label>Kategori</label>
-                                <select name="" id="" class="form-control">
-                                  <option>Fashion</option>
+                                <label for="name">Price</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  name=""
+                                  id="name"
+                                  value="$100"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-group">
+                                <label for="category">Merk</label>
+                                <select
+                                  name=""
+                                  class="form-control"
+                                  id="category"
+                                >
+                                  <option value="">Adidas</option>
+                                  <option value="">Nike</option>
                                 </select>
                               </div>
                             </div>
-                            <div class="col-lg-6 mt-2">
+                            <div class="col-12">
                               <div class="form-group">
-                                <label>Store Status</label>
-                                <p class="text-muted">
-                                  Apakah saat ini toko Anda buka?
-                                </p>
-                                <div
-                                  class="custom-control custom-radio custom-control-inline"
+                                <label for="description">Description</label>
+                                <textarea
+                                  name=""
+                                  id="description"
+                                  class="form-control"
+                                  cols="30"
+                                  rows="10"
                                 >
-                                  <input
-                                    type="radio"
-                                    class="custom-control-input"
-                                    name="is_store_open"
-                                    id="openStoreTrue"
-                                    value="true"
-                                  />
-                                  <label
-                                    for="openStoreTrue"
-                                    class="custom-control-label"
-                                  >
-                                    Buka
-                                  </label>
-                                </div>
-                                <div
-                                  class="custom-control custom-radio custom-control-inline"
+    Color is great with the minimalist concept. Even I thought it was made by Cactus industry.</textarea
                                 >
-                                  <input
-                                    type="radio"
-                                    class="custom-control-input"
-                                    name="is_store_open"
-                                    id="openStoreFalse"
-                                    value="false"
-                                  />
-                                  <label
-                                    for="openStoreFalse"
-                                    class="custom-control-label"
-                                  >
-                                    Tutup Sementara
-                                  </label>
-                                </div>
                               </div>
                             </div>
                           </div>
-
                           <button
                             type="submit"
-                            class="btn btn-success mt-4 px-4"
+                            class="btn btn-success px-4 py-2"
                           >
-                            Save
+                            Update Product
                           </button>
                         </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-5">
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-body p-5">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="img-box-detail position-relative">
+                              <span
+                                class="btn-delete-detail badge bg-warning rounded-circle p-2 d-flex position-absolute justify-content-center align-items-center"
+                              >
+                                <i
+                                  class="bx bx-x bx-sm"
+                                  style="color: #fff"
+                                ></i>
+                              </span>
+                              <img
+                                src="images/jordan-detail.jpg"
+                                class="img-fluid rounded-lg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-4 mt-3 mt-sm-0">
+                            <div class="img-box-detail position-relative">
+                              <span
+                                class="btn-delete-detail badge bg-warning rounded-circle p-2 d-flex position-absolute justify-content-center align-items-center"
+                              >
+                                <i
+                                  class="bx bx-x bx-sm"
+                                  style="color: #fff"
+                                ></i>
+                              </span>
+                              <img
+                                src="images/jordan-detail2.jpg"
+                                class="img-fluid rounded-lg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-4 mt-3 mt-sm-0">
+                            <div class="img-box-detail position-relative">
+                              <span
+                                class="btn-delete-detail badge bg-warning rounded-circle p-2 d-flex position-absolute justify-content-center align-items-center"
+                              >
+                                <i
+                                  class="bx bx-x bx-sm"
+                                  style="color: #fff"
+                                ></i>
+                              </span>
+                              <img
+                                src="images/jordan-detail3.jpg"
+                                class="img-fluid rounded-lg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="btn btn-success mt-4"
+                          >Upload Photo Product</a
+                        >
                       </div>
                     </div>
                   </div>
