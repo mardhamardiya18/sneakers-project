@@ -127,64 +127,54 @@
           >
             <div class="container-fluid">
               <div class="dashboard-heading">
-                <h2 class="dashboard-title">Adidas Shoe Sneakers</h2>
-                <nav class="nav-bread mt-4 mb-3">
-                  <ol class="breadcrumb p-0">
-                    <li class="breadcrumb-item">
-                      <a href="dashboard-product.html" class="text-dark"
-                        >Products</a
-                      >
-                    </li>
-                    <li class="breadcrumb-item active">Product Detail</li>
-                  </ol>
-                </nav>
+                <h2 class="dashboard-title">Create New Product</h2>
+                <p class="dashboard-subtitle">Create your own product</p>
               </div>
 
               <div class="dashboard-content mt-4 mt-ld-5">
                 <div class="row">
                   <div class="col">
                     <div class="card">
-                      <div class="card-body p-5">
-                        <form action="">
-                          <div class="row mb-4">
+                      <div class="card-body">
+                        <form action="dashboard-product.html">
+                          <div class="row">
                             <div class="col-md-6">
                               <div class="form-group">
                                 <label for="name">Product Name</label>
                                 <input
                                   type="text"
                                   class="form-control"
-                                  name=""
                                   id="name"
-                                  value="Adidas Shoe Sneakers"
+                                  value="air jordan"
                                 />
                               </div>
                             </div>
                             <div class="col-md-6">
                               <div class="form-group">
-                                <label for="name">Price</label>
+                                <label for="price">Price</label>
                                 <input
                                   type="text"
+                                  id="price"
                                   class="form-control"
-                                  name=""
-                                  id="name"
-                                  value="$100"
+                                  value="$1000"
                                 />
                               </div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-md-12">
                               <div class="form-group">
-                                <label for="category">Merk</label>
+                                <label for="category">Category Product</label>
                                 <select
                                   name=""
-                                  class="form-control"
                                   id="category"
+                                  class="form-control"
                                 >
-                                  <option value="">Adidas</option>
                                   <option value="">Nike</option>
+                                  <option value="">Adidas</option>
                                 </select>
                               </div>
                             </div>
-                            <div class="col-12">
+
+                            <div class="col-md-12">
                               <div class="form-group">
                                 <label for="description">Description</label>
                                 <textarea
@@ -193,86 +183,38 @@
                                   class="form-control"
                                   cols="30"
                                   rows="10"
-                                >
-    Color is great with the minimalist concept. Even I thought it was made by Cactus industry.</textarea
-                                >
+                                ></textarea>
+                              </div>
+                            </div>
+
+                            <div class="col-md-12">
+                              <div class="row">
+                                <div class="col-md-10">
+                                  <div class="form-group">
+                                    <label for="thumbnail">Thumbnail</label>
+                                    <input
+                                      type="file"
+                                      class="form-control"
+                                      name=""
+                                      id=""
+                                    />
+                                    <small class="text-muted">
+                                      resolution 500 &times; 140 px
+                                    </small>
+                                  </div>
+                                </div>
+                                <div class="col-md-2"></div>
                               </div>
                             </div>
                           </div>
+
                           <button
                             type="submit"
-                            class="btn btn-success px-4 py-2"
+                            class="btn btn-success mt-4 px-5"
                           >
-                            Update Product
+                            Create Product
                           </button>
-                          <a href="#" class="btn btn-danger px-4 py-2 ml-3"
-                            >Delete Product</a
-                          >
                         </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row mt-5">
-                  <div class="col">
-                    <div class="card">
-                      <div class="card-body p-5">
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="img-box-detail position-relative">
-                              <span
-                                class="btn-delete-detail badge bg-warning rounded-circle p-2 d-flex position-absolute justify-content-center align-items-center"
-                              >
-                                <i
-                                  class="bx bx-x bx-sm"
-                                  style="color: #fff"
-                                ></i>
-                              </span>
-                              <img
-                                src="images/jordan-detail.jpg"
-                                class="img-fluid rounded-lg"
-                                alt=""
-                              />
-                            </div>
-                          </div>
-                          <div class="col-md-4 mt-3 mt-sm-0">
-                            <div class="img-box-detail position-relative">
-                              <span
-                                class="btn-delete-detail badge bg-warning rounded-circle p-2 d-flex position-absolute justify-content-center align-items-center"
-                              >
-                                <i
-                                  class="bx bx-x bx-sm"
-                                  style="color: #fff"
-                                ></i>
-                              </span>
-                              <img
-                                src="images/jordan-detail2.jpg"
-                                class="img-fluid rounded-lg"
-                                alt=""
-                              />
-                            </div>
-                          </div>
-                          <div class="col-md-4 mt-3 mt-sm-0">
-                            <div class="img-box-detail position-relative">
-                              <span
-                                class="btn-delete-detail badge bg-warning rounded-circle p-2 d-flex position-absolute justify-content-center align-items-center"
-                              >
-                                <i
-                                  class="bx bx-x bx-sm"
-                                  style="color: #fff"
-                                ></i>
-                              </span>
-                              <img
-                                src="images/jordan-detail3.jpg"
-                                class="img-fluid rounded-lg"
-                                alt=""
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <a href="#" class="btn btn-success mt-4"
-                          >Upload Photo Product</a
-                        >
                       </div>
                     </div>
                   </div>
